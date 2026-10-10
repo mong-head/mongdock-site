@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>mongdock Privacy Policy</title>
+<link rel="icon" type="image/png" href="../img/mongdock.png">
+<link rel="stylesheet" href="../style.css">
+<link rel="alternate" hreflang="ko" href="../privacy.html">
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+  <a class="brand" href="./"><img src="../img/mongdock.png" alt="">mongdock</a>
+  <nav>
+    <a href="./">Home</a>
+    <a href="../privacy.html" lang="ko">한국어</a>
+  </nav>
+</header>
+<main class="doc">
+<h1>mongdock Privacy Policy</h1>
+<p>Effective date: October 10, 2026</p>
+<p>The mongdock operator ("we"), the developer of mongdock, explains below how mongdock handles your information.</p>
+<h2>1. At a glance</h2>
+<ul>
+<li>mongdock has no accounts or sign-in, shows no ads, and uses no advertising or analytics trackers.</li>
+<li>Information mongdock reads to draw its screens (notification contents, window titles, app names, and so on) is used <strong>only on your PC</strong> and is never sent anywhere.</li>
+<li>The only things that leave your PC are: (1) problem reports you choose to send, (2) usage statistics (only if you agree when first asked, can be turned off anytime, no ID that identifies your PC), (3) downloading app menu rules, (4) downloading events from calendar addresses you add, and, for the GitHub version only, update checks.</li>
+</ul>
+<h2>2. Information used only on your PC (never sent)</h2>
+<div class="table-scroll"><table>
+<thead><tr><th>Information</th><th>Why</th><th>Where it stays</th></tr></thead>
+<tbody>
+<tr><td>Windows notification contents (app name, title, text, sender picture, etc.)</td><td>To show notification banners and the notification list. In the Microsoft Store version, Windows first asks whether to allow mongdock notification access; if you allow it, mongdock reads notifications the official way Windows provides. If you don't, mongdock reads the Windows notification history stored on your PC, as before. When you clear a notification in mongdock, it's also cleared from the Windows notification center. Both reading and clearing happen only on your PC</td><td>mongdock doesn't keep a copy of notification contents (they stay in the Windows notification center). You can turn notification access off anytime in Windows Settings → Privacy &amp; security → Notifications</td></tr>
+<tr><td>Window titles, running app names and icons</td><td>Running apps and window previews in the Dock; app name and menus in the menu bar</td><td>Not stored (only your pinned Dock apps are in the settings file)</td></tr>
+<tr><td>Names of apps using the camera or microphone</td><td>The green/orange dot in the menu bar and the "which app" card. mongdock only reads the usage record Windows keeps</td><td>Not stored</td></tr>
+<tr><td>Calendar iCal subscription addresses</td><td>To show your events on the calendar (only if you add one)</td><td>On your PC in <code>%APPDATA%\mongdock</code>, encrypted with Windows Data Protection (DPAPI, current user). Downloaded events are cached the same way</td></tr>
+<tr><td>File and folder names</td><td>To find files from the search box, by asking the Windows Search index</td><td>Not stored</td></tr>
+<tr><td>Apps you opened from the search box (last 30 days)</td><td>The "Recent" list in search</td><td>On your PC only. Turn off or clear in Settings → Search</td></tr>
+<tr><td>mongdock settings and logs</td><td>To run mongdock and troubleshoot</td><td>On your PC in <code>%APPDATA%\mongdock</code> (logs record only the server name, not your calendar address)</td></tr>
+</tbody></table></div>
+<p>None of this is sent automatically to us or anyone else.</p>
+<h2>3. Information that leaves your PC</h2>
+<h3>3-1. Report a Problem (only when you send it)</h3>
+<ul>
+<li>When: only when you open "Report a Problem…" (Settings → About, or the menu bar logo menu) and click Send. If mongdock quit unexpectedly or hit an error, it asks the next time it opens whether you want to report it; you still review the report and click Send yourself. Nothing is sent automatically.</li>
+<li>What is sent:<ul><li>The type (bug, question, suggestion), title, and message you write</li><li>An email address for our reply (only if you enter one; optional)</li><li>Diagnostic info: mongdock version and install type, Windows version, language, monitor resolution and scaling, whether there's a battery or touch screen, a summary of mongdock settings, recent log lines, and error details (for error reports)</li></ul></li>
+<li>What is masked: email addresses, web addresses (URLs, including calendar addresses), file and folder paths, user names, the device (PC) name, window titles, and long-lived identifiers (GUIDs, long numbers) are masked automatically. You see exactly what will be sent <strong>before you send it</strong>, and you can simply not send it.</li>
+<li>Each report carries a new random number, so reports can't be linked to each other or to your PC.</li>
+<li>Route: mongdock → Google Apps Script (run by Google) → our support mailbox (mongdock@gmail.com, Gmail).</li>
+<li>Purpose: to investigate and fix problems, answer questions, and consider suggestions.</li>
+</ul>
+<h3>3-2. Usage statistics (only with your consent)</h3>
+<ul>
+<li>Consent: when you first use mongdock, it asks whether it may send usage statistics, and sends them <strong>only if you agree</strong>. Every mongdock feature works the same if you don't.</li>
+<li>What: once a day, only on days mongdock runs, we receive only: date, mongdock version, install type (Microsoft Store or installer), Windows version (10 or 11 and build number), mongdock display language, whether it's a laptop, number of monitors and the main monitor's scaling, whether some features are on or off (Dock auto-hide, menu bar, notification style, whether a calendar is connected, search button, hide taskbar, lightweight mode), and the number of mongdock errors since the last report.</li>
+<li>Not sent: your name, email, PC name, user name, window titles, notification contents, file or folder names, addresses you visit, error details, or any ID that identifies your PC. Days can't be linked together as coming from the same PC.</li>
+<li>If you're offline, up to 7 days of records are kept on your PC and sent together next time.</li>
+<li>Turning it off: turn off Settings → About → "Send usage stats" and nothing is sent from then on; records waiting on your PC are deleted too. You can turn it on or off anytime.</li>
+<li>Route: mongdock → Google Apps Script → a Google Sheets spreadsheet in our account.</li>
+<li>Purpose: to understand which Windows versions and display setups people use, which features are used, and whether errors are increasing, so we can fix and improve mongdock.</li>
+</ul>
+<h3>3-3. App menu rules</h3>
+<ul>
+<li>To keep menu-bar menus up to date for apps without their own menus (such as browsers), mongdock downloads one file a little after it starts and once a day from the mongdock website (mong-head.github.io). It only downloads; it sends no information about you. This can be turned off in the settings file.</li>
+</ul>
+<h3>3-4. Calendar events</h3>
+<ul>
+<li>Only if you add an iCal subscription address, mongdock downloads events from that address (for example Google or Outlook.com) on a schedule (every 15 minutes by default). It only downloads.</li>
+</ul>
+<h3>3-5. Update checks (GitHub version only)</h3>
+<ul>
+<li>The Microsoft Store version is updated by the Store; mongdock doesn't check on its own.</li>
+<li>The version downloaded from GitHub asks GitHub whether a new version exists and, when you click "Update now", downloads the installer. You can turn off automatic checks in Settings → About.</li>
+</ul>
+<h3>3-6. Web search</h3>
+<ul>
+<li>"Search the web" in the search box opens your default browser with your search on the site you chose (Google, Naver, or Bing). The search term goes to that site; mongdock doesn't send or store it separately.</li>
+</ul>
+<h3>3-7. Purchase and trial</h3>
+<ul>
+<li>Purchases and the 15-day trial are handled by the Microsoft Store. mongdock only asks the Store for this PC's license state (trial or purchased); payment details never reach us. Microsoft's handling is covered by Microsoft's privacy statement.</li>
+</ul>
+<h3>3-8. About IP addresses</h3>
+<ul>
+<li>Whenever something is exchanged over the internet (3-1 to 3-5), the server on the other side (Google, GitHub, your calendar provider) may record your IP address in its own logs, as is normal. We don't collect IP addresses through mongdock, and what Google Apps Script passes to us doesn't include your IP address.</li>
+</ul>
+<h2>4. Retention and deletion</h2>
+<div class="table-scroll"><table>
+<thead><tr><th>Information</th><th>Kept for</th><th>Deleted by</th></tr></thead>
+<tbody>
+<tr><td>Problem reports (message, diagnostics, email)</td><td>1 year after the issue is resolved</td><td>Deleting from the support mailbox</td></tr>
+<tr><td>Usage statistics</td><td>2 years from receipt</td><td>Deleting rows from the spreadsheet</td></tr>
+<tr><td>Information on your PC (settings, logs, calendar addresses, recents)</td><td>Until you delete it</td><td>Choosing "Yes" to "Delete settings too?" when uninstalling, or deleting the <code>%APPDATA%\mongdock</code> folder</td></tr>
+</tbody></table></div>
+<p>Where the law requires us to keep information longer, we keep it for that period.</p>
+<h2>5. Service providers and international transfer</h2>
+<p>We use the following service to receive and store reports and statistics. We don't sell your information or share it with third parties for other purposes.</p>
+<div class="table-scroll"><table>
+<thead><tr><th>Recipient</th><th>Country</th><th>Items</th><th>When and how</th><th>Purpose</th><th>Retention</th></tr></thead>
+<tbody>
+<tr><td>Google LLC (Google Apps Script, Gmail, Google Sheets)</td><td>United States and other countries where Google has data centers</td><td>Items in 3-1 (problem reports) and 3-2 (usage statistics)</td><td>When you send a report / once a day, over an encrypted connection (HTTPS)</td><td>Receiving reports, storing statistics</td><td>As in section 4</td></tr>
+</tbody></table></div>
+<p>If you don't want your information transferred, don't send problem reports, and don't agree to (or turn off) usage statistics. All other mongdock features keep working. (Email support also goes through Gmail.)</p>
+<h2>6. Your rights</h2>
+<ul>
+<li>You can ask to see, correct, or delete the information we hold about you, or ask us to stop processing it.</li>
+<li>How: email mongdock+help@gmail.com. Usage statistics contain nothing that identifies a PC, so we can't single out one person's statistics. Problem reports can be found by the date, content, or reply email.</li>
+<li>We'll respond within 10 days.</li>
+<li>You can refuse usage statistics by not agreeing when asked or by turning them off in Settings → About, and refuse problem reports by not sending them, at any time.</li>
+</ul>
+<h2>7. How we protect information</h2>
+<ul>
+<li>Everything sent over the internet uses encrypted connections (HTTPS).</li>
+<li>Problem-report diagnostics are masked before sending and shown to you first.</li>
+<li>Calendar subscription addresses and downloaded events are encrypted with Windows Data Protection (DPAPI) so that only the current Windows user on your PC can open them.</li>
+<li>The support mailbox and statistics spreadsheet are accessible only from our account, which uses two-step verification.</li>
+</ul>
+<h2>8. Cookies and similar technologies</h2>
+<p>mongdock doesn't use cookies, advertising IDs, or device IDs.</p>
+<h2>9. Children</h2>
+<p>mongdock isn't directed at children and doesn't ask for age. We don't knowingly collect personal information from children under 14 (or the age set by your local law). If we learn that a child sent personal information (such as an email address) in a problem report without a parent's consent, we'll delete it promptly. Parents can request deletion at the contact below.</p>
+<h2>10. Contact</h2>
+<ul>
+<li>Privacy officer: the mongdock operator (mongdock+help@gmail.com)</li>
+<li>Email: mongdock+help@gmail.com</li>
+<li>In the app: Settings → About → "Report a Problem…"</li>
+</ul>
+<h2>11. Changes</h2>
+<p>If this policy changes, we'll post the update on this page and in mongdock's change log (Settings → What's New) at least 7 days before it takes effect, and 30 days before for important changes such as collecting new items.</p>
+</main>
+<footer>
+  <p><a href="./">mongdock home</a> · <a href="mailto:mongdock+help@gmail.com">mongdock+help@gmail.com</a></p>
+</footer>
+</div>
+</body>
+</html>

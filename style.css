@@ -1,0 +1,94 @@
+/* mongdock site: one small stylesheet, no external fonts or scripts */
+:root {
+  --bg: #f7f8fb;
+  --card: #ffffff;
+  --text: #1d1d1f;
+  --muted: #5f6368;
+  --line: #e3e5ea;
+  --accent: #3a7bd5;
+  --accent-text: #ffffff;
+  --todo: #fff3c4;
+  --radius: 14px;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #16171a;
+    --card: #202226;
+    --text: #ececef;
+    --muted: #a3a7ad;
+    --line: #34373d;
+    --accent: #5b9bf0;
+    --todo: #5a4a12;
+  }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Segoe UI", "Malgun Gothic", "Apple SD Gothic Neo", system-ui, sans-serif;
+  font-size: 17px;
+  line-height: 1.65;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+a { color: var(--accent); }
+.wrap { max-width: 920px; margin: 0 auto; padding: 0 20px; }
+header.top {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 14px 0; gap: 12px;
+}
+header.top .brand { display: flex; align-items: center; gap: 10px; font-weight: 600; color: var(--text); text-decoration: none; }
+header.top .brand img { width: 32px; height: 32px; border-radius: 8px; }
+header.top nav a { margin-left: 14px; font-size: 15px; color: var(--muted); text-decoration: none; }
+header.top nav a:hover { color: var(--text); }
+.hero { text-align: center; padding: 40px 0 28px; }
+.hero img { width: 112px; height: 112px; border-radius: 26px; }
+.hero h1 { font-size: 40px; margin: 14px 0 6px; line-height: 1.2; }
+.hero p.lead { font-size: 20px; color: var(--muted); margin: 0 auto 22px; max-width: 640px; }
+.button {
+  display: inline-block; padding: 12px 22px; border-radius: 999px;
+  background: var(--accent); color: var(--accent-text); text-decoration: none; font-weight: 600;
+}
+.button.secondary { background: transparent; color: var(--accent); border: 1px solid var(--accent); }
+.note { font-size: 14px; color: var(--muted); margin-top: 10px; }
+section { padding: 26px 0; }
+section h2 { font-size: 26px; margin: 0 0 14px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 16px; }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 18px 20px; }
+.card h3 { margin: 0 0 6px; font-size: 19px; }
+.card p, .card ul { margin: 0; color: var(--muted); font-size: 16px; }
+.card ul { padding-left: 18px; }
+.shots { display: grid; grid-template-columns: repeat(auto-fit, minmax(380px, 1fr)); gap: 18px; }
+@media (max-width: 480px) { .shots { grid-template-columns: 1fr; } }
+figure { margin: 0; }
+.shot {
+  aspect-ratio: 16 / 9; width: 100%; border-radius: 10px;
+  border: 1px dashed var(--line); background: var(--card);
+  display: flex; align-items: center; justify-content: center;
+  color: var(--muted); font-size: 14px; text-align: center; padding: 10px;
+}
+figure img { width: 100%; height: auto; border-radius: 10px; border: 1px solid var(--line); }
+figcaption { font-size: 15px; color: var(--muted); margin-top: 6px; }
+details { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 12px 16px; margin-bottom: 10px; }
+details summary { cursor: pointer; font-weight: 600; }
+details p { margin: 10px 0 2px; color: var(--muted); }
+.todo { background: var(--todo); padding: 0 4px; border-radius: 4px; font-family: inherit; }
+footer { border-top: 1px solid var(--line); margin-top: 30px; padding: 20px 0 40px; font-size: 14px; color: var(--muted); }
+footer a { color: var(--muted); }
+/* privacy pages */
+.doc h1 { font-size: 32px; line-height: 1.25; margin: 26px 0 8px; }
+.doc h2 { font-size: 22px; margin: 32px 0 10px; }
+.doc h3 { font-size: 18px; margin: 22px 0 8px; }
+.table-scroll { overflow-x: auto; margin: 10px 0; }
+.doc table { border-collapse: collapse; width: 100%; font-size: 15px; min-width: 560px; }
+.doc th, .doc td { border: 1px solid var(--line); padding: 8px 10px; vertical-align: top; text-align: left; }
+.doc th { background: var(--card); }
+.doc code { font-family: Consolas, monospace; font-size: 0.92em; }
+@media (max-width: 600px) {
+  body { font-size: 16px; }
+  .hero h1 { font-size: 32px; }
+  .hero p.lead { font-size: 18px; }
+  header.top nav a { margin-left: 10px; }
+}
