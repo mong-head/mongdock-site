@@ -3,100 +3,135 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>mongdock — a menu bar and Dock for Windows</title>
-<meta name="description" content="A menu bar on top with app menus, Control Center and a calendar, a Dock at the bottom, notification banners and mongdock Search, all set up with clicks. For Windows 11 and 10.">
-<link rel="icon" type="image/png" href="../img/mongdock.png">
-<link rel="stylesheet" href="../style.css">
-<link rel="alternate" hreflang="ko" href="../">
+<title>mongdock — A tidy desktop. A day that opens in one click</title>
+<meta name="description" content="A dock below to launch and switch apps, a menu bar above with app menus, controls, and your calendar. Open the apps you always use together in one click with routines.">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" type="image/webp" href="../img/mongdock-64.webp">
+<link rel="stylesheet" href="../assets/site.css">
+<link rel="alternate" hreflang="ko" href="../index.html">
+<link rel="alternate" hreflang="en" href="index.html">
+<link rel="alternate" hreflang="ja" href="../ja/index.html">
+<link rel="alternate" hreflang="zh-Hans" href="../zh-hans/index.html">
+<link rel="alternate" hreflang="zh-Hant" href="../zh-hant/index.html">
+<link rel="alternate" hreflang="de" href="../de/index.html">
+<link rel="alternate" hreflang="fr" href="../fr/index.html">
+<link rel="alternate" hreflang="es" href="../es/index.html">
+<link rel="alternate" hreflang="x-default" href="../index.html">
+<meta property="og:title" content="mongdock — A tidy desktop. A day that opens in one click">
+<meta property="og:description" content="A dock below to launch and switch apps, a menu bar above with app menus, controls, and your calendar. Open the apps you always use together in one click with routines.">
+<script src="../assets/site.js" defer></script>
 </head>
 <body>
-<div class="wrap">
-<header class="top">
-  <a class="brand" href="./"><img src="../img/mongdock.png" alt="">mongdock</a>
-  <nav>
-    <a href="#features">Features</a>
-    <a href="#faq">FAQ</a>
-    <a href="privacy.html">Privacy</a>
-    <a href="../" lang="ko">한국어</a>
-  </nav>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap header-in">
+    <a class="brand" href="index.html"><img src="../img/mongdock-64.webp" width="30" height="30" alt=""><span class="brand-name">mongdock</span></a>
+    <nav class="nav" id="site-nav" aria-label="Main menu">
+      <ul class="nav-list">
+        <li><button class="nav-drop-btn" type="button" aria-expanded="false" aria-controls="nav-features">Features <span class="caret" aria-hidden="true">▾</span></button>
+          <ul class="nav-drop" id="nav-features">
+            <li><a href="dock/index.html">Dock</a></li><li><a href="menu-bar/index.html">Menu bar, notifications &amp; search</a></li><li><a href="all-apps/index.html">All Apps</a></li><li><a href="routines/index.html">Routines</a></li>
+          </ul>
+        </li>
+        <li><a class="nav-link" href="pricing/index.html">Pricing</a></li>
+        <li><a class="nav-link" href="help/index.html">Help</a></li>
+        <!-- lang:top --><li class="lang-menu"><button class="nav-link nav-lang lang-btn" type="button" aria-expanded="false" aria-controls="lang-top">Language <span class="caret" aria-hidden="true">▾</span></button>
+          <ul class="lang-list" id="lang-top">
+            <li><a href="../index.html" hreflang="ko" lang="ko">한국어</a></li>
+            <li><a href="index.html" hreflang="en" lang="en" aria-current="true">English</a></li>
+            <li><a href="../ja/index.html" hreflang="ja" lang="ja">日本語</a></li>
+            <li><a href="../zh-hans/index.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a></li>
+            <li><a href="../zh-hant/index.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a></li>
+            <li><a href="../de/index.html" hreflang="de" lang="de">Deutsch</a></li>
+            <li><a href="../fr/index.html" hreflang="fr" lang="fr">Français</a></li>
+            <li><a href="../es/index.html" hreflang="es" lang="es">Español</a></li>
+          </ul>
+        </li><!-- /lang:top -->
+      </ul>
+    </nav>
+    <a class="btn btn-sm btn-primary btn-get is-soon header-get" data-get data-ready="Get mongdock" href="pricing/index.html">Coming soon</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu"><span></span></button>
+  </div>
 </header>
-
-<main>
+<main id="main">
 <section class="hero">
-  <img src="../img/mongdock.png" alt="mongdock cloud icon">
-  <h1>mongdock</h1>
-  <p class="lead">A menu bar on top with app menus, Control Center and a calendar. A Dock at the bottom to launch and switch apps. Notification banners and mongdock Search in the middle of the screen, all set up with clicks.</p>
-  <span class="button" aria-disabled="true">Coming soon to Microsoft Store</span>
-  <p class="note">Windows 11, or Windows 10 version 2004 or later · x64 PCs · Every feature free for 15 days, then a one-time purchase · No subscription, no ads</p>
-</section>
-
-<section id="shots">
-  <h2>Take a look</h2>
-  <div class="shots">
-    <figure><div class="shot">Screenshot 1 — ../img/en-01-overview.png</div><figcaption>A menu bar with app menus and status on top, a Dock to launch and switch apps at the bottom.</figcaption></figure>
-    <figure><div class="shot">Screenshot 2 — ../img/en-02-app-menu.png</div><figcaption>The current app's menus live in the menu bar. Even browsers and File Explorer get their common shortcuts as menu items.</figcaption></figure>
-    <figure><div class="shot">Screenshot 3 — ../img/en-03-dock-preview.png</div><figcaption>Pick a window from live previews.</figcaption></figure>
-    <figure><div class="shot">Screenshot 4 — ../img/en-04-search.png</div><figcaption>Press Win+Space to open mongdock Search. Find apps, settings, and files, or do quick math.</figcaption></figure>
-    <figure><div class="shot">Screenshot 5 — ../img/en-05-calendar.png</div><figcaption>Click the clock for a calendar and your notifications.</figcaption></figure>
-    <figure><div class="shot">Screenshot 6 — ../img/en-06-control-center.png</div><figcaption>Control Center puts brightness, night light, and power mode at hand.</figcaption></figure>
+  <div class="wrap">
+    <h1>A tidy desktop. A day that opens in one click.</h1>
+    <p class="lead">A dock below to launch and switch apps, a menu bar above with app menus, controls, and your calendar. Open the apps you always use together in one click with routines.</p>
+    <div class="hero-actions">
+      <span class="btn btn-primary btn-get is-soon btn-lg" data-get data-ready="Get it from Microsoft Store" role="link" aria-disabled="true"><span class="soon-dot" aria-hidden="true"></span>Coming soon</span>
+      <a class="btn btn-ghost btn-lg" href="#features">See what it does ↓</a>
+    </div>
+    <p class="hero-price">Try every feature free for 15 days, then buy once. No subscription, no ads.</p>
+    <p class="hero-req">Windows 11, or Windows 10 version 2004 or later · x64 PCs</p>
+    <div class="hero-shot"><img src="../img/hero2-en-1200.webp" srcset="../img/hero2-en-800.webp 800w, ../img/hero2-en-1200.webp 1200w, ../img/hero2-en-1600.webp 1600w, ../img/hero2-en.webp 2400w" sizes="(max-width: 720px) calc(100vw - 32px), (max-width: 1128px) calc(100vw - 48px), 1080px" width="2400" height="1500" alt="mongdock running: in the menu bar at the top, the Notes app’s Edit menu is open with Undo, Cut, Copy, and Paste. In the Dock at the bottom, the pointer is on the browser icon, which grows with its neighbors and shows a “Browser” name label. Two windows, notes and a browser, are open in the middle." fetchpriority="high" decoding="async"></div>
   </div>
 </section>
 
-<section id="features">
-  <h2>What it does</h2>
-  <div class="grid">
-    <div class="card"><h3>Menu bar</h3><p>The current app's menus and common shortcuts, sound, Wi-Fi, Bluetooth, battery, virtual desktops, and other apps' tray icons, in one line at the top.</p></div>
-    <div class="card"><h3>Control Center</h3><p>Screen brightness (laptop screens and external monitors that support it), night light, and power mode, one click away.</p></div>
-    <div class="card"><h3>Notification banners</h3><p>Windows notifications as banners at the top right. Click the clock for a list grouped by app; clearing one in mongdock also clears it from the Windows notification center.</p></div>
-    <div class="card"><h3>mongdock Search</h3><p>Press Win+Space for a search box in the middle of the screen. Find apps, Windows settings, files and folders, or do quick math.</p></div>
-    <div class="card"><h3>Dock</h3><p>Bottom, left, right, or top. Drag to reorder, pick windows from previews, magnification, light and dark themes.</p></div>
-    <div class="card"><h3>Calendar</h3><p>Korean public holidays and lunar dates. Paste an iCal address from Google Calendar or Outlook.com to see your events.</p></div>
-    <div class="card"><h3>Laptops and many setups</h3><p>Low-battery alerts, camera and microphone indicator, multiple monitors, high-DPI and portrait screens, and a lightweight mode for remote sessions. Korean and English.</p></div>
-    <div class="card"><h3>All with clicks</h3><p>Every setting is a click away and applies right away. Clicking the Dock or menu bar doesn't take keyboard focus from the app you're using.</p></div>
+<section class="section" aria-labelledby="pain-h">
+  <div class="wrap">
+    <div class="section-head"><h2 id="pain-h">Sound familiar?</h2></div>
+    <div class="grid-3"><div class="card pain-card"><span class="num" aria-hidden="true">1</span><h3>A crowded taskbar</h3><p class="muted">It&#x27;s full of icons, and the one you need still isn&#x27;t there.</p></div><div class="card pain-card"><span class="num" aria-hidden="true">2</span><h3>Settings all over the place</h3><p class="muted">Volume, brightness, and your calendar each live somewhere else.</p></div><div class="card pain-card"><span class="num" aria-hidden="true">3</span><h3>The same setup, every morning</h3><p class="muted">Open mail, chat, and docs one by one, then drag each window into place.</p></div></div>
+    <p class="pain-close">mongdock takes care of the small stuff.</p>
   </div>
 </section>
 
-<section id="trust">
-  <h2>Built to be trusted</h2>
-  <div class="grid">
-    <div class="card"><h3>Your taskbar comes back</h3><p>mongdock hides the Windows taskbar only while it's running and restores it when you pause or quit.</p></div>
-    <div class="card"><h3>Stays on your PC</h3><p>Notification contents, window titles, and calendar addresses are used only on your PC. Usage statistics are sent only if you agree when first asked. <a href="privacy.html">Privacy policy</a></p></div>
-    <div class="card"><h3>Clean uninstall</h3><p>Settings → About → "Uninstall mongdock…" restores the taskbar and notification sound, then opens the Windows uninstall page.</p></div>
+<section class="section section-alt" id="features" aria-labelledby="feat-h">
+  <div class="wrap">
+    <h2 class="sr-only" id="feat-h">Features</h2>
+    <div class="features-grid">
+      <article class="card feature-card is-big"><div><span class="label">Dock</span><h3>A lighter bottom edge</h3><p>Apps, folders, and the Recycle Bin, right where you want them. Pick windows from live previews.</p><a class="more" href="dock/index.html">Learn more →</a></div><figure class="scene" data-scene><div class="scene-frames"><img src="../img/anim/dock/en-01-1200.webp" srcset="../img/anim/dock/en-01-800.webp 800w, ../img/anim/dock/en-01-1200.webp 1200w, ../img/anim/dock/en-01.webp 1600w" sizes="(max-width: 860px) calc(100vw - 82px), (max-width: 980px) calc(100vw - 122px), 620px" width="1600" height="1000" alt="Moving the pointer to the Dock makes the icons swell like a wave with a “Notes” name label, and the browser icon shows previews of its two windows. Then “Keep in Dock” is chosen from the right-click menu, and the Photos icon is dragged to a new spot, leaving the Dock in its new order." loading="lazy" decoding="async" class="is-on"><img data-src="../img/anim/dock/en-02-1200.webp" data-srcset="../img/anim/dock/en-02-800.webp 800w, ../img/anim/dock/en-02-1200.webp 1200w, ../img/anim/dock/en-02.webp 1600w" sizes="(max-width: 860px) calc(100vw - 82px), (max-width: 980px) calc(100vw - 122px), 620px" width="1600" height="1000" alt="" loading="lazy" decoding="async"><img data-src="../img/anim/dock/en-03-1200.webp" data-srcset="../img/anim/dock/en-03-800.webp 800w, ../img/anim/dock/en-03-1200.webp 1200w, ../img/anim/dock/en-03.webp 1600w" sizes="(max-width: 860px) calc(100vw - 82px), (max-width: 980px) calc(100vw - 122px), 620px" width="1600" height="1000" alt="" loading="lazy" decoding="async"><img data-src="../img/anim/dock/en-04-1200.webp" data-srcset="../img/anim/dock/en-04-800.webp 800w, ../img/anim/dock/en-04-1200.webp 1200w, ../img/anim/dock/en-04.webp 1600w" sizes="(max-width: 860px) calc(100vw - 82px), (max-width: 980px) calc(100vw - 122px), 620px" width="1600" height="1000" alt="" loading="lazy" decoding="async"><img data-src="../img/anim/dock/en-05-1200.webp" data-srcset="../img/anim/dock/en-05-800.webp 800w, ../img/anim/dock/en-05-1200.webp 1200w, ../img/anim/dock/en-05.webp 1600w" sizes="(max-width: 860px) calc(100vw - 82px), (max-width: 980px) calc(100vw - 122px), 620px" width="1600" height="1000" alt="" loading="lazy" decoding="async"><img data-src="../img/anim/dock/en-06-1200.webp" data-srcset="../img/anim/dock/en-06-800.webp 800w, ../img/anim/dock/en-06-1200.webp 1200w, ../img/anim/dock/en-06.webp 1600w" sizes="(max-width: 860px) calc(100vw - 82px), (max-width: 980px) calc(100vw - 122px), 620px" width="1600" height="1000" alt="" loading="lazy" decoding="async"></div><div class="scene-dots" hidden></div></figure></article><article class="card feature-card"><div><span class="label">Menu bar, notifications &amp; search</span><h3>Everything else, up top</h3><p>App menus, sound and brightness, your calendar, notification banners, and search all start from one bar.</p><a class="more" href="menu-bar/index.html">Learn more →</a></div><figure class="scene" data-scene><div class="scene-frames"><img src="../img/anim/topbar/en-01-1200.webp" srcset="../img/anim/topbar/en-01-800.webp 800w, ../img/anim/topbar/en-01-1200.webp 1200w, ../img/anim/topbar/en-01.webp 1600w" sizes="(max-width: 860px) calc(100vw - 82px), 340px" width="1600" height="1000" alt="From the menu bar: an app menu, brightness sliders in Control Center, then the calendar and notifications opened from the clock." loading="lazy" decoding="async" class="is-on"><img data-src="../img/anim/topbar/en-02-1200.webp" data-srcset="../img/anim/topbar/en-02-800.webp 800w, ../img/anim/topbar/en-02-1200.webp 1200w, ../img/anim/topbar/en-02.webp 1600w" sizes="(max-width: 860px) calc(100vw - 82px), 340px" width="1600" height="1000" alt="" loading="lazy" decoding="async"><img data-src="../img/anim/topbar/en-03-1200.webp" data-srcset="../img/anim/topbar/en-03-800.webp 800w, ../img/anim/topbar/en-03-1200.webp 1200w, ../img/anim/topbar/en-03.webp 1600w" sizes="(max-width: 860px) calc(100vw - 82px), 340px" width="1600" height="1000" alt="" loading="lazy" decoding="async"><img data-src="../img/anim/topbar/en-04-1200.webp" data-srcset="../img/anim/topbar/en-04-800.webp 800w, ../img/anim/topbar/en-04-1200.webp 1200w, ../img/anim/topbar/en-04.webp 1600w" sizes="(max-width: 860px) calc(100vw - 82px), 340px" width="1600" height="1000" alt="" loading="lazy" decoding="async"></div><div class="scene-dots" hidden></div></figure></article><article class="card feature-card"><div><span class="label">All Apps</span><h3>Just the apps you use</h3><p>Favorites, folders with only the apps you use, and a cleanup for apps you&#x27;ve stopped opening, in one panel.</p><a class="more" href="all-apps/index.html">Learn more →</a></div><figure class="scene" data-scene><div class="scene-frames"><img src="../img/anim/allapps/en-01-1200.webp" srcset="../img/anim/allapps/en-01-800.webp 800w, ../img/anim/allapps/en-01-1200.webp 1200w, ../img/anim/allapps/en-01.webp 1600w" sizes="(max-width: 860px) calc(100vw - 82px), 340px" width="1600" height="1000" alt="Clicking All Apps in the Dock opens a panel in the middle of the screen with routines, favorites, folders, and every app." loading="lazy" decoding="async" class="is-on"><img data-src="../img/anim/allapps/en-02-1200.webp" data-srcset="../img/anim/allapps/en-02-800.webp 800w, ../img/anim/allapps/en-02-1200.webp 1200w, ../img/anim/allapps/en-02.webp 1600w" sizes="(max-width: 860px) calc(100vw - 82px), 340px" width="1600" height="1000" alt="" loading="lazy" decoding="async"><img data-src="../img/anim/allapps/en-03-1200.webp" data-srcset="../img/anim/allapps/en-03-800.webp 800w, ../img/anim/allapps/en-03-1200.webp 1200w, ../img/anim/allapps/en-03.webp 1600w" sizes="(max-width: 860px) calc(100vw - 82px), 340px" width="1600" height="1000" alt="" loading="lazy" decoding="async"></div><div class="scene-dots" hidden></div></figure></article><article class="card feature-card"><div><span class="label">Routines</span><h3>One click, and you&#x27;re set up</h3><p>Bundle apps, links, and games. They open together on a new desktop, each in its spot, and close together when you&#x27;re done.</p><a class="more" href="routines/index.html">More on Routines →</a></div><figure class="scene" data-scene><div class="scene-frames"><img src="../img/anim/routine/en-01-1200.webp" srcset="../img/anim/routine/en-01-800.webp 800w, ../img/anim/routine/en-01-1200.webp 1200w, ../img/anim/routine/en-01.webp 1600w" sizes="(max-width: 860px) calc(100vw - 82px), 340px" width="1600" height="1000" alt="On an empty desktop, clicking the routine icon in the Dock opens notes, browser, music, and mail windows in their set spots, and the menu bar shows the routine&#x27;s name and time spent." loading="lazy" decoding="async" class="is-on"><img data-src="../img/anim/routine/en-02-1200.webp" data-srcset="../img/anim/routine/en-02-800.webp 800w, ../img/anim/routine/en-02-1200.webp 1200w, ../img/anim/routine/en-02.webp 1600w" sizes="(max-width: 860px) calc(100vw - 82px), 340px" width="1600" height="1000" alt="" loading="lazy" decoding="async"><img data-src="../img/anim/routine/en-03-1200.webp" data-srcset="../img/anim/routine/en-03-800.webp 800w, ../img/anim/routine/en-03-1200.webp 1200w, ../img/anim/routine/en-03.webp 1600w" sizes="(max-width: 860px) calc(100vw - 82px), 340px" width="1600" height="1000" alt="" loading="lazy" decoding="async"><img data-src="../img/anim/routine/en-04-1200.webp" data-srcset="../img/anim/routine/en-04-800.webp 800w, ../img/anim/routine/en-04-1200.webp 1200w, ../img/anim/routine/en-04.webp 1600w" sizes="(max-width: 860px) calc(100vw - 82px), 340px" width="1600" height="1000" alt="" loading="lazy" decoding="async"><img data-src="../img/anim/routine/en-05-1200.webp" data-srcset="../img/anim/routine/en-05-800.webp 800w, ../img/anim/routine/en-05-1200.webp 1200w, ../img/anim/routine/en-05.webp 1600w" sizes="(max-width: 860px) calc(100vw - 82px), 340px" width="1600" height="1000" alt="" loading="lazy" decoding="async"><img data-src="../img/anim/routine/en-06-1200.webp" data-srcset="../img/anim/routine/en-06-800.webp 800w, ../img/anim/routine/en-06-1200.webp 1200w, ../img/anim/routine/en-06.webp 1600w" sizes="(max-width: 860px) calc(100vw - 82px), 340px" width="1600" height="1000" alt="" loading="lazy" decoding="async"></div><div class="scene-dots" hidden></div></figure></article>
+    </div>
   </div>
 </section>
 
-<section id="good-to-know">
-  <h2>Good to know</h2>
-  <div class="card"><ul>
-    <li>Apps that use their own pop-ups instead of Windows notifications, such as KakaoTalk, don't appear as banners. The red dot on their Dock icon still shows.</li>
-    <li>After you change the notification sound for the first time, sign out and back in for it to take effect.</li>
-    <li>Naver Calendar can't be connected because it doesn't offer an iCal subscription address.</li>
-    <li>On Windows 10, rounded corners and some icons may look different from Windows 11.</li>
-    <li>x64 PCs only.</li>
-  </ul></div>
+<section class="section" aria-labelledby="trust-h">
+  <div class="wrap">
+    <div class="section-head"><h2 id="trust-h">Built to be trusted</h2></div>
+    <div class="grid-3"><div class="card trust-card"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg></div><h3>Stays on your PC</h3><p class="muted">App history, window titles, routines, and notifications are used only on your PC. mongdock never reads your browser&#x27;s address bar or history. Usage stats are sent only if you agree, and only as counts.</p></div><div class="card trust-card"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 16h18"/><path d="M7 18h2"/></svg></div><h3>Your taskbar comes back</h3><p class="muted">mongdock hides the Windows taskbar only while it runs. Pause or quit, and it&#x27;s right where you left it.</p></div><div class="card trust-card"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 20l7-7"/><path d="M13 4l7 7-6 6-7-7z"/><path d="M9 14l1 1"/></svg></div><h3>Clean to remove</h3><p class="muted">“Uninstall mongdock…” restores your taskbar, auto-hide, and notification sound before opening the Windows uninstall page.</p></div></div>
+    <p class="trust-link"><a href="privacy.html">Read the privacy policy</a></p>
+  </div>
 </section>
 
-<section id="faq">
-  <h2>FAQ</h2>
-  <details><summary>I can't see the taskbar.</summary><p>mongdock hides the Windows taskbar while it's running. Turn off Settings → General → "Hide Windows taskbar", or click the mongdock icon in the notification area once to pause. If mongdock quit unexpectedly and the taskbar is still hidden, start mongdock again, or sign out and back in.</p></details>
-  <details><summary>Anything to do before uninstalling?</summary><p>Go to Settings → About → "Uninstall mongdock…". It restores the taskbar, auto-hide, and notification sound, and opens the Windows uninstall page.</p></details>
-  <details><summary>KakaoTalk notifications don't show as banners.</summary><p>KakaoTalk uses its own pop-ups instead of Windows notifications, so mongdock can't show them as banners. The red dot on its Dock icon still appears.</p></details>
-  <details><summary>Can I connect Naver Calendar?</summary><p>Personal Naver Calendar doesn't offer an iCal subscription address. For Google Calendar or Outlook.com, copy the iCal address and click Settings → Calendar → "Add from clipboard".</p></details>
-  <details><summary>Can I use it on a work PC?</summary><p>It installs and runs without administrator rights, but company policies may block hiding the taskbar, starting at sign-in, or downloading calendars. Check your company's rules first.</p></details>
-  <details><summary>It feels slow over remote desktop.</summary><p>Turn on Settings → General → "Lightweight mode" to switch off animations and blur.</p></details>
-  <details><summary>What happens when the trial ends?</summary><p>After 15 days, the Dock and menu bar stop and the Windows taskbar comes back. Buy mongdock to pick up where you left off, with your settings intact.</p></details>
-</section>
-
-<section id="support">
-  <h2>Contact</h2>
-  <div class="card"><p>"Report a Problem…" in Settings → About is fastest. You can also email <a href="mailto:mongdock+help@gmail.com">mongdock+help@gmail.com</a>.</p></div>
+<section class="section-tight">
+  <div class="wrap">
+    <div class="cta">
+      <h2>Give your desktop a lighter look today.</h2>
+      <span class="btn btn-primary btn-get is-soon btn-lg" data-get data-ready="Get it from Microsoft Store" role="link" aria-disabled="true"><span class="soon-dot" aria-hidden="true"></span>Coming soon</span>
+      <p class="cta-note">Free for 15 days</p>
+    </div>
+  </div>
 </section>
 </main>
-
-<footer>
-  <p>© 2026 The mongdock operator · <a href="privacy.html">Privacy policy</a> · <a href="mailto:mongdock+help@gmail.com">mongdock+help@gmail.com</a> · <a href="../" lang="ko">한국어</a></p>
-  <p>Microsoft and Windows are trademarks of the Microsoft group of companies.</p>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand"><a class="brand" href="index.html"><img src="../img/mongdock-64.webp" width="30" height="30" alt="" loading="lazy">mongdock</a></div>
+      <div><h2>Product</h2><ul><li><a href="dock/index.html">Dock</a></li><li><a href="menu-bar/index.html">Menu bar, notifications &amp; search</a></li><li><a href="all-apps/index.html">All Apps</a></li><li><a href="routines/index.html">Routines</a></li><li><a href="pricing/index.html">Pricing</a></li></ul></div>
+      <div><h2>Help</h2><ul>
+        <li><a href="help/index.html#faq">FAQ</a></li>
+        <li><a href="help/index.html#report">Report a problem</a></li>
+        <li><a href="help/index.html#uninstall">Uninstalling mongdock</a></li>
+        <li><a href="mailto:mongdock+help@gmail.com">Contact</a></li>
+      </ul></div>
+      <div><h2>mongdock</h2><ul>
+        <li><a href="privacy.html">Privacy policy</a></li>
+        <!-- lang:foot --><li class="lang-menu lang-menu-up"><button class="lang-btn foot-lang-btn" type="button" aria-expanded="false" aria-controls="lang-foot">Language <span class="caret" aria-hidden="true">▾</span></button>
+          <ul class="lang-list" id="lang-foot">
+            <li><a href="../index.html" hreflang="ko" lang="ko">한국어</a></li>
+            <li><a href="index.html" hreflang="en" lang="en" aria-current="true">English</a></li>
+            <li><a href="../ja/index.html" hreflang="ja" lang="ja">日本語</a></li>
+            <li><a href="../zh-hans/index.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a></li>
+            <li><a href="../zh-hant/index.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a></li>
+            <li><a href="../de/index.html" hreflang="de" lang="de">Deutsch</a></li>
+            <li><a href="../fr/index.html" hreflang="fr" lang="fr">Français</a></li>
+            <li><a href="../es/index.html" hreflang="es" lang="es">Español</a></li>
+          </ul>
+        </li><!-- /lang:foot -->
+      </ul></div>
+    </div>
+    <div class="footer-bottom"><p>© 2026 mongdock · Microsoft and Windows are trademarks of the Microsoft group of companies.</p></div>
+  </div>
 </footer>
-</div>
 </body>
 </html>
